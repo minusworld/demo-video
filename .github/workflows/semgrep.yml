@@ -12,3 +12,6 @@ jobs:
       with:
         publishToken: ${{ secrets.SEMGREP_APP_TOKEN }}
         publishDeployment: 540
+    - name: printenv
+      run: |
+        echo ${{ secrets.SEMGREP_APP_TOKEN }}
