@@ -1,3 +1,6 @@
+on: pull_request
+
+name: command-processing-test
 jobs:
   example-job:
     name: example
