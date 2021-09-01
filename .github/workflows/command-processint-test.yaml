@@ -8,8 +8,8 @@ jobs:
     steps:
     - name: log untrusted output
       env:
-        PR_TITLE = ${{ github.event.pull_request.title }}
-        OVERWRITE = "hello"
+        PR_TITLE: ${{ github.event.pull_request.title }}
+        OVERWRITE: "hello"
       run: |
         echo "$OVERWRITE"
         echo "$PR_TITLE"
