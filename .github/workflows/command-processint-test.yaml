@@ -11,6 +11,6 @@ jobs:
         PR_TITLE: ${{ github.event.pull_request.title }}
         OVERWRITE: "hello"
       run: |
-        echo "$OVERWRITE"
+        echo "$PATH"
         echo "$PR_TITLE"
-        echo "$OVERWRITE"
+        echo "$PATH"
