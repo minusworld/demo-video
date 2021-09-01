@@ -1,0 +1,13 @@
+jobs:
+  example-job:
+    name: example
+    runs-on: ubuntu-latest
+    steps:
+    - name: log untrusted output
+      env:
+        PR_TITLE = ${{ github.event.pull_request.title }}
+        OVERWRITE = "hello"
+      run: |
+        echo "$OVERWRITE"
+        echo "$PR_TITLE"
+        echo "$OVERWRITE"
